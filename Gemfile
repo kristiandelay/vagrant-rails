@@ -60,5 +60,5 @@ group :production do
   # include alli, a memcache client library
   #gem 'dalli'
   
-  gem "couchdb", "~> 0.2.2"
+  #gem "couchdb", "~> 0.2.2"
 end
