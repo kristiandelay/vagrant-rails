@@ -39,7 +39,7 @@ end
 
 group :production do
   # include postgres in production
-  gem 'pg'
+  #gem 'pg'
   # include alli, a memcache client library
   #gem 'dalli'
 end
