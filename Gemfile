@@ -29,9 +29,17 @@ gem 'sqlite3'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
+  gem 'annotate', '2.4.0'
 end
 
 group :test do
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
+end
+
+group :production do
+  # include postgres in production
+  gem 'pg'
+  # include alli, a memcache client library
+  #gem 'dalli'
 end
