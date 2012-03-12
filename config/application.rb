@@ -38,5 +38,12 @@ module Testproject
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+      
+    config.assets.enabled = true
+      
+    config.generators.stylesheet_engine = :sass
+      
+    # Version of your assets, change this if you want to expire all your assets
+    config.assets.version = '1.0'
   end
 end

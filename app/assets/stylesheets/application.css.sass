@@ -1,0 +1,49 @@
+$footerHeight: 142px
+
+*
+  margin: 0
+
+html, body
+  height: 100%
+
+body
+  background: #ddd
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+.wrapper
+  height: auto!important
+  height: 100%
+  margin: 0 auto
+  margin-bottom: -$footerHeight
+  min-height: 100%
+  
+#footer, .push
+  height: $footerHeight
+
+#footer, #header
+  background: #222
+  color: #fff
+  
+.pageContent
+  margin: 0 auto
+  width: 1000px
+  
+#header
+  .pageContent
+    h1
+      color: #666
+      margin: 0
+    #navigation
+      height: 15px
+      ul
+        list-style: none
+        li
+          float: left
+          width: 80px
+          a
+            text-decoration: none
+
+#page
+  margin-top: 10px

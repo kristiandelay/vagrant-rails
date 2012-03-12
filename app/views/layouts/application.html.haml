@@ -1,0 +1,28 @@
+!!!
+%html
+  %head
+    %title
+      Getsubmit
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    
+  %body
+    .wrapper
+      #header
+        .pageContent
+          %h1
+            Getsubmit
+          = render 'shared/navigation'
+       
+      #page
+        .pageContent    
+          = yield
+      .push
+      
+    #footer
+      .pageContent
+        %p
+          this is the footer
+          
+    = debug(params) if Rails.env.development?
